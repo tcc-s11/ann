@@ -1,0 +1,37 @@
+Galera, to fazendo em vb por hora, mas a ideia é fazer em c# assim que a rede neural estiver funcionando/testada. To fazendo isso por ter mais facilidade com vb, e queria ve ela funcionando logo (quando estiver funcionando vou traduzir tudo pra C#, que eu manjo menos, e ai continuar sempre em C#)
+
+Criei um padrão pro arquivo de entrada (que está dentro de bin/debug, que é a pasta do executável), em que usei a seguinte convenção (abrindo com o sintax highlighting de C ou SQL fica mais bonito:
+--
+@ inputs
+3
+@ hidden
+3
+@ outputs
+1
+@ training sets
+8
+@ training data - input
+0;0;0;
+0;0;1;
+0;1;0;
+0;1;1;
+1;0;0;
+1;0;1;
+1;1;0;
+1;1;1;
+@ training data - output
+0;
+0;
+0;
+1;
+0;
+1;
+1;
+1;
+--
+inputs: quantidade de nós de entrada
+hidden: nós da meiúca (a meiúca só tem uma camada, por enquanto)
+outputs: quantidede de nós de saída
+training sets: número de dados (tuplas) de entrada que vão ser usadas pra treinar a rede
+training data - input: os inputs de treinamento de rede
+training data - output: os outputs esperados para os inputs de treinamento de rede, na mesma ordem que os inputs
