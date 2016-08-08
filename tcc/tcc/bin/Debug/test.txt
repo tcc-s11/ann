@@ -1,0 +1,26 @@
+@ inputs
+3
+@ hidden
+3
+@ outputs
+1
+@ training sets
+8
+@ training data - input
+0;0;0;
+0;0;1;
+0;1;0;
+0;1;1;
+1;0;0;
+1;0;1;
+1;1;0;
+1;1;1;
+@ training data - output
+0;
+0;
+0;
+1;
+0;
+1;
+1;
+1;

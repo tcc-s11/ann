@@ -1,0 +1,6 @@
+C:\Users\Get\Documents\SharpDevelop Projects\tcc\tcc\bin\Debug\tcc.exe.config
+C:\Users\Get\Documents\SharpDevelop Projects\tcc\tcc\bin\Debug\tcc.exe
+C:\Users\Get\Documents\SharpDevelop Projects\tcc\tcc\bin\Debug\tcc.pdb
+C:\Users\Get\Documents\SharpDevelop Projects\tcc\tcc\obj\Debug\tcc.csprojResolveAssemblyReference.cache
+C:\Users\Get\Documents\SharpDevelop Projects\tcc\tcc\obj\Debug\tcc.exe
+C:\Users\Get\Documents\SharpDevelop Projects\tcc\tcc\obj\Debug\tcc.pdb
