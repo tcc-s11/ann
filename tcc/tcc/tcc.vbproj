@@ -61,7 +61,9 @@
     <Compile Include="forms\MainForm.Designer.vb">
       <DependentUpon>MainForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="forms\MainForm.vb" />
+    <Compile Include="forms\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="modules\globais.vb" />
     <Compile Include="modules\math_functions.vb" />
     <Compile Include="Program.vb" />
@@ -73,11 +75,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="classes" />
-    <Folder Include="modules" />
-    <Folder Include="forms" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="forms\MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
