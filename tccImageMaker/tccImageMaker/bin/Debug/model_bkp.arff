@@ -1,0 +1,12 @@
+% 1. Title: TCC 
+
+@RELATION penalty_kicks
+
+@ATTRIBUTE batedor				STRING
+@ATTRIBUTE distancia_apoio 		REAL
+@ATTRIBUTE inclinacao_perna		REAL
+@ATTRIBUTE distancia_ombros		REAL
+@ATTRIBUTE angulo_ombros		REAL
+@ATTRIBUTE class 				{esquerda,direita,meio}
+
+@DATA

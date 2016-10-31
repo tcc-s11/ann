@@ -1,0 +1,18 @@
+C:\Users\Get\AppData\Local\Temporary Projects\tccImageMaker\bin\Debug\tccImageMaker.exe
+C:\Users\Get\AppData\Local\Temporary Projects\tccImageMaker\bin\Debug\tccImageMaker.pdb
+C:\Users\Get\AppData\Local\Temporary Projects\tccImageMaker\bin\Debug\tccImageMaker.xml
+C:\Users\Get\AppData\Local\Temporary Projects\tccImageMaker\obj\x86\Debug\tccImageMaker.Form1.resources
+C:\Users\Get\AppData\Local\Temporary Projects\tccImageMaker\obj\x86\Debug\tccImageMaker.Resources.resources
+C:\Users\Get\AppData\Local\Temporary Projects\tccImageMaker\obj\x86\Debug\tccImageMaker.vbproj.GenerateResource.Cache
+C:\Users\Get\AppData\Local\Temporary Projects\tccImageMaker\obj\x86\Debug\tccImageMaker.exe
+C:\Users\Get\AppData\Local\Temporary Projects\tccImageMaker\obj\x86\Debug\tccImageMaker.xml
+C:\Users\Get\AppData\Local\Temporary Projects\tccImageMaker\obj\x86\Debug\tccImageMaker.pdb
+C:\Users\Get\documents\visual studio 2010\Projects\tccImageMaker\tccImageMaker\obj\x86\Debug\tccImageMaker.exe
+C:\Users\Get\documents\visual studio 2010\Projects\tccImageMaker\tccImageMaker\obj\x86\Debug\tccImageMaker.xml
+C:\Users\Get\documents\visual studio 2010\Projects\tccImageMaker\tccImageMaker\obj\x86\Debug\tccImageMaker.pdb
+C:\Users\Get\Documents\Visual Studio 2010\Projects\tccImageMaker\tccImageMaker\bin\Debug\tccImageMaker.exe
+C:\Users\Get\Documents\Visual Studio 2010\Projects\tccImageMaker\tccImageMaker\bin\Debug\tccImageMaker.pdb
+C:\Users\Get\Documents\Visual Studio 2010\Projects\tccImageMaker\tccImageMaker\bin\Debug\tccImageMaker.xml
+C:\Users\Get\Documents\Visual Studio 2010\Projects\tccImageMaker\tccImageMaker\obj\x86\Debug\tccImageMaker.Form1.resources
+C:\Users\Get\Documents\Visual Studio 2010\Projects\tccImageMaker\tccImageMaker\obj\x86\Debug\tccImageMaker.Resources.resources
+C:\Users\Get\Documents\Visual Studio 2010\Projects\tccImageMaker\tccImageMaker\obj\x86\Debug\tccImageMaker.vbproj.GenerateResource.Cache
