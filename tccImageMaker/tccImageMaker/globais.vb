@@ -45,7 +45,7 @@ Module globais
         ' esquerda ou direita (meio)?
         s.Add(imagens(i).lado.ToLower)
 
-        Return Format(CDbl(s(1)), "#.###").Replace(",", ".") + "," + Format(CDbl(s(2)), "#.###").Replace(",", ".") + "," + Format(CDbl(s(3)), "#.###").Replace(",", ".") + "," + Format(CDbl(s(4)), "#.###").Replace(",", ".") + "," + s(5)
+        Return Format(CDbl(s(0)), "#.###").Replace(",", ".") + "," + Format(CDbl(s(1)), "#.###").Replace(",", ".") + "," + Format(CDbl(s(2)), "#.###").Replace(",", ".") + "," + Format(CDbl(s(3)), "#.###").Replace(",", ".") + "," + s(4)
 
     End Function
 
