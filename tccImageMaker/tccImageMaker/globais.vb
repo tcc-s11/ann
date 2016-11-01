@@ -28,7 +28,7 @@ Module globais
 
         's.Add(imagens(i).batedor)
         ' pega batedor
-        s.Add("Vitor")
+        ' s.Add("Vitor")
 
         ' distancia do pe de apoio
         s.Add(calcDistanciaPeApoio(i))
@@ -45,7 +45,7 @@ Module globais
         ' esquerda ou direita (meio)?
         s.Add(imagens(i).lado.ToLower)
 
-        Return s(0) + "," + Format(CDbl(s(1)), "#.###").Replace(",", ".") + "," + Format(CDbl(s(2)), "#.###").Replace(",", ".") + "," + Format(CDbl(s(3)), "#.###").Replace(",", ".") + "," + Format(CDbl(s(4)), "#.###").Replace(",", ".") + "," + s(5)
+        Return Format(CDbl(s(1)), "#.###").Replace(",", ".") + "," + Format(CDbl(s(2)), "#.###").Replace(",", ".") + "," + Format(CDbl(s(3)), "#.###").Replace(",", ".") + "," + Format(CDbl(s(4)), "#.###").Replace(",", ".") + "," + s(5)
 
     End Function
 

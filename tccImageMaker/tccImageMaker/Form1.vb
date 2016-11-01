@@ -12,20 +12,22 @@ Public Class Form1
     'End Sub
 
     Private Sub pictureBox1_MouseClick(ByVal sender As Object, ByVal e As MouseEventArgs) Handles PictureBox1.MouseClick
-        If farol = True Then
-            farol = False
-            Using g As Graphics = Graphics.FromImage(PictureBox1.Image)
-                ' g.DrawPie(Pens.White, _Previous.Value, e.Location)
-                ' g.DrawRectangle(Pens.White, e.Location.X - CInt(sideSize / 2), e.Location.Y - CInt(sideSize / 2), sideSize, sideSize)
-                g.FillEllipse(Brushes.Red, e.Location.X - CInt(sideSize / 2), e.Location.Y - CInt(sideSize / 2), sideSize, sideSize)
-                g.DrawString(estado, New Drawing.Font("Arial", 22, FontStyle.Bold), Brushes.DarkOrange, e.Location.X + CInt(sideSize / 2), e.Location.Y + CInt(sideSize / 2))
-                estado += 1
-                imagens(indiceImagem).pontos.Add(New Point(e.Location.X - CInt(sideSize / 2), e.Location.Y - CInt(sideSize / 2)))
-                atualizaTextBox()
-            End Using
-            PictureBox1.Invalidate()
-            _Previous = e.Location
-            farol = True
+        If imagens.Count > 0 Then
+            If farol = True Then
+                farol = False
+                Using g As Graphics = Graphics.FromImage(PictureBox1.Image)
+                    ' g.DrawPie(Pens.White, _Previous.Value, e.Location)
+                    ' g.DrawRectangle(Pens.White, e.Location.X - CInt(sideSize / 2), e.Location.Y - CInt(sideSize / 2), sideSize, sideSize)
+                    g.FillEllipse(Brushes.Red, e.Location.X - CInt(sideSize / 2), e.Location.Y - CInt(sideSize / 2), sideSize, sideSize)
+                    g.DrawString(estado, New Drawing.Font("Arial", 22, FontStyle.Bold), Brushes.DarkOrange, e.Location.X + CInt(sideSize / 2), e.Location.Y + CInt(sideSize / 2))
+                    estado += 1
+                    imagens(indiceImagem).pontos.Add(New Point(e.Location.X - CInt(sideSize / 2), e.Location.Y - CInt(sideSize / 2)))
+                    atualizaTextBox()
+                End Using
+                PictureBox1.Invalidate()
+                _Previous = e.Location
+                farol = True
+            End If
         End If
     End Sub
 
@@ -150,16 +152,22 @@ Public Class Form1
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
-        imagens(indiceImagem).pontos.Clear()
-        imagens(indiceImagem).imagem = imagens(indiceImagem).imagemOriginal.Clone
-        PictureBox1.Image = imagens(indiceImagem).imagem
-        PictureBox1.Invalidate()
-        estado = 1
-        atualizaEstadoBotoes()
+        If imagens.Count > 0 Then
+            imagens(indiceImagem).pontos.Clear()
+            imagens(indiceImagem).imagem = imagens(indiceImagem).imagemOriginal.Clone
+            PictureBox1.Image = imagens(indiceImagem).imagem
+            PictureBox1.Invalidate()
+            estado = 1
+            atualizaEstadoBotoes()
+        End If
     End Sub
 
     Private Sub SalvarNoTxtToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SalvarNoTxtToolStripMenuItem.Click
-        saveArff()
+        Try
+            saveArff()
+        Catch ex As Exception
+            MsgBox("ERRO: vc selecionou pontos em todas as imagens?")
+        End Try
     End Sub
 
 End Class
